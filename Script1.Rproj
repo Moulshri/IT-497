@@ -1,13 +1,6 @@
-Version: 1.0
+df <- read.table("http://www.itk.ilstu.edu/faculty/jrwolf/wit.csv", header = TRUE , sep = ",")
 
-RestoreWorkspace: Default
-SaveWorkspace: Default
-AlwaysSaveHistory: Default
 
-EnableCodeIndexing: Yes
-UseSpacesForTab: Yes
-NumSpacesForTab: 2
-Encoding: UTF-8
+df [which( df$company =="Reddit" ), "num_female_eng" ]
 
-RnwWeave: Sweave
-LaTeX: pdfLaTeX
+sum (df$num_female_eng)
